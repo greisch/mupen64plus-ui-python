@@ -18,6 +18,9 @@ import setuptools
 # Add the src folder to the path
 sys.path.insert(0, os.path.realpath("src"))
 
+# Select qt5 as prefered qt enviroment
+os.environ['QT_SELECT']='qt5'
+
 from m64py.core.defs import FRONTEND_VERSION
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
